@@ -1,0 +1,59 @@
+/* Reseta o estilo padrão e aplica box-sizing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f0f0f0;
+  transition: background-color 0.8s ease-in-out;
+}
+
+/* Estilo geral do container */
+.container {
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 50px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo do título */
+.title {
+  font-size: 3rem;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+/* Botão animado */
+.animated-btn {
+  padding: 15px 40px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 50px;
+  background: linear-gradient(90deg, #8e2de2, #4a00e0); /* Degradê roxo para azul */
+  color: white;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Efeito de hover no botão */
+.animated-btn:hover {
+  background: linear-gradient(90deg, #ff6a00, #ee0979); /* Cores vibrantes no hover */
+  transform: scale(1.1); /* Aumenta o tamanho */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4); /* Aumenta a sombra */
+}
+
+/* Animação ao ser pressionado */
+.animated-btn:active {
+  transform: scale(0.95); /* Efeito de clique */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
